@@ -6,7 +6,8 @@ package com.prasanth.shopping.scala
 object Main {
 
   def main(args: Array[String]) {
-    val total = Billing.checkout(args)
+    val introduceOffers = true; // change to false, if no offers.
+    val total = Billing.checkout(args, introduceOffers)
     print("[" + args.mkString(",") + "]: " + total)
   }
 
